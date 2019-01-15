@@ -9,7 +9,7 @@ var connection = mysql.createConnection({
   password: "12345678",
   database:"burger_db"
 
-});localStorage
+});
 
 connection.connect(function(err){
 if (err) {
