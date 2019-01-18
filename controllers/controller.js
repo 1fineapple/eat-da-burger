@@ -16,8 +16,10 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res) {
-  burger.create(["burger"], [req.body.name], function(result) {
+  burger.create(["burgerName"], [req.body.burgerName], function(result) {
     // Send back the ID of the new quote
+    console.log("working");
+    
     res.json({ id: result.insertId });
   });
 });
