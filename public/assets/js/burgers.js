@@ -24,22 +24,28 @@ $(function() {
 });
 
 $(function(){
-$(".devoured").on("click", function(event){
-  console.log("work!")
-  // var devourBurger ={
-  //     name:$("#yum").val().trim(),
-  //   };
+$(".devourIt").on("click", function(event){
+  // from event bject go to data.id attribute 
+  
+  var id = $(this).data("id")
+  var devourBurger = $(this).data("isdevoured");
 
-  //   $.ajax("/api/burgers", {
-  //     type: "POST",
-  //     data: devourBurger
-  //   }).then(
-  //     function() {
-  //       console.log("I'm full!");
-  //       // Reload the page to get the updated list
-  //       location.reload();
-  //     }
-  //   );
+  var devourBurgerObject = {
+      devourIt: 1
+    };
+
+  console.log(devourBurgerObject);
+
+    $.ajax("/api/burgers/" + id, {
+      type: "PUT",
+      data: devourBurgerObject
+    }).then(
+      function() {
+        console.log("I'm full!");
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
   });
 });
 
