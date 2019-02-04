@@ -1,19 +1,67 @@
+
+html {
+  background-color:#EFEBE2;
+}
+
+body {
+ width: 65%;
+ margin: 30px auto; 
+ display: flex;
+ flex-direction: column;
+ background-color: #EFEBE2;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #DE0001;
+
 }
 
-.label {
+/* .label {
   font-weight: bold;
+  
+} */
+
+.create-form {
+  padding: 15px;
+  margin: 5px;
+  background: #C8651B;
+  font-size: 25px;
+  font-family: monospace;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+.devourIt{
+  background:black;
+  color: #faebd7;
+  font-size: 15px;
+  font-family: monospace;
 }
 
 .form-group {
   margin-bottom: 5px;
 }
+
+h2{
+font-family: monospace;
+}
+
+h1{
+  font-family: monospace;
+  font-size: 30px;
+}
+
+.burgerButton{
+  font-family: monospace;
+  font-size: 20px;
+  background: #FEDA15;
+
+}
+
+#silly_burger{
+  height: 200px;
+  width: 35%;
+  
+}
+
+
